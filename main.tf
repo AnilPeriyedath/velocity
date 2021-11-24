@@ -1,8 +1,8 @@
 # Create a resource group if it doesn't exist
 provider "azurerm" {
   alias           = "stage1"
-  subscription_id = var.ARM_SUBSCRIPTION_ID
-  tenant_id       = var.ARM_TENANT_ID
+  subscription_id = "b15b429c-cb44-44e0-827f-68d1aebda0b0"
+  tenant_id       = "f77d0bdc-0d72-4b3d-8d8c-d87448c17ef8"
 
   features {}
 }
