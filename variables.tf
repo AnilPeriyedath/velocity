@@ -37,3 +37,13 @@ variable "linux_virtual_machine_name" {
   type        = string
   description = "Linux VM name in Azure"
 }
+
+variable "ARM_SUBSCRIPTION_ID" {
+  type        = string
+  description = "Azure subscription_id"
+}
+
+variable "ARM_TENANT_ID " {
+  type        = string
+  description = "Azure tenant id "
+}
