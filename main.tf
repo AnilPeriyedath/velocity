@@ -1,5 +1,11 @@
 # Create a resource group if it doesn't exist
+provider "azurerm" {
+  alias           = "stage1"
+  subscription_id = var.ARM_SUBSCRIPTION_ID
+  tenant_id       = var.ARM_TENANT_ID
 
+  features {}
+}
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
