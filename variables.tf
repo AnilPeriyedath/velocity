@@ -43,7 +43,7 @@ variable "ARM_SUBSCRIPTION_ID" {
   description = "Azure subscription_id"
 }
 
-variable "ARM_TENANT_ID " {
+variable "ARM_TENANT_ID" {
   type        = string
   description = "Azure tenant id "
 }
