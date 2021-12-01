@@ -1,13 +1,6 @@
-
-
-# Configure the Microsoft Azure Provider
 provider "azurerm" {
-
   features {}
-
 }
-
-
 
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
@@ -40,7 +33,6 @@ resource "azurerm_network_interface" "example" {
   }
 }
 
-
 resource "azurerm_linux_virtual_machine" "example" {
   name                = "example-machine"
   resource_group_name = azurerm_resource_group.example.name
@@ -50,16 +42,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   network_interface_ids = [
     azurerm_network_interface.example.id,
   ]
-  }
 
-  os_profile {
-      computer_name  = "hostname"
-      admin_username = "testadmin"
-      admin_password = "Password1234!"
-    }
-    os_profile_linux_config {
-      disable_password_authentication = false
-    }
 
 
   os_disk {
