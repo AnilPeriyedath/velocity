@@ -42,16 +42,6 @@ resource "azurerm_linux_virtual_machine" "example" {
   admin_password      = "P@$$w0rd1234!"
   disable_password_authentication = true
 
-  os_profile {
-		computer_name  = "hostname"
-		admin_username = "testadmin"
-		admin_password = "Password1234!"
-	}
-
-	os_profile_linux_config {
-		disable_password_authentication = false
-	}
-
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
