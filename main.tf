@@ -40,7 +40,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   size                = "Standard_F2"
   admin_username      = "adminuser"
   admin_password      = "P@$$w0rd1234!"
-  disable_password_authentication = true
+  disable_password_authentication = false
 
   os_disk {
     caching              = "ReadWrite"
